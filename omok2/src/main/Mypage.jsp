@@ -162,16 +162,16 @@
 				<td><input type="text" name="tel" onKeyup="this.value=this.value.replace(/[^0-9]/g,'');" value="${memberList[0].usertel }"></td>
 			</tr>
 			<tr align="center">
-			<td colspan="2"><input type="submit" value=" 수정 " onClick = "fn_update()" > 
-					&nbsp; <input type="reset" value=" 취소하기 "></td></tr>
-			<tr>
-				<td> </td>
+				<td colspan='2'><input type="submit" value=" 수정 " onClick = "fn_update()" > </td>
+			</tr>
+			<tr align="center"> 
+				<td colspan='2'> <input type="reset" value=" 취소하기 "></td>
 			</tr>
 			<tr align="center">
-			<td colspan="2">
-				<input type="button" value="메인으로 돌아가기" onClick = 'location.href = "/omok2/Main.jsp"'> &nbsp;
-			 	<input type="button" value="로그아웃" onClick = 'location.href = "/omok2/Mypage/logout.do"'>
-			 </td>
+				<td colspan='2'><input type="button" value="메인으로 돌아가기" onClick = 'location.href = "/omok2/Main.jsp"'> </td>
+			</tr>
+			<tr align="center">
+				<td colspan='2'><input type="button" value="로그아웃" onClick = 'location.href = "/omok2/Mypage/logout.do"'></td>
 			</tr>
 		</table>
 	</form>

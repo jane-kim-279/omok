@@ -169,7 +169,7 @@
 						drawnodes(i, j, color);
 	        			if(json.color == 1) {
 	        				document.getElementById("status").innerHTML = "Black stones player wins";
-	        				if(user == 1){
+	        				if(usr == 1){
 	        					setTimeout(function(){alert("Black stones player wins"); window.location.href = 'Game/result.do';}, 3000);
 	        				} else {
 	        					setTimeout(function(){alert("Black stones player wins"); window.location.href = 'Main.jsp';}, 3000);
@@ -177,7 +177,11 @@
 	        			}
 	        			else {
 	        				document.getElementById("status").innerHTML = "White stones player wins";
-	        				setTimeout(function(){alert("Black stones player wins"); window.location.href = 'Main.jsp';}, 3000);
+	        				if(usr != 1){
+	        					setTimeout(function(){alert("White stones player wins"); window.location.href = 'Game/result.do';}, 3000);
+	        				} else {
+	        					setTimeout(function(){alert("White stones player wins"); window.location.href = 'Main.jsp';}, 3000);
+	        				}
 	        			}
 	        			disableScreen();
 	        			
